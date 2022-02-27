@@ -1,6 +1,5 @@
 body {
   margin: auto;
-  background: linear-gradient(90deg, #8aec92 0%, #049c10 29%, #8aec92 60%);
   max-width: 1600px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -14,7 +13,6 @@ body {
 
 .fish-gallery {
   justify-self: center;
-  background: linear-gradient(90deg, #8aec92 0%, #049c10 29%, #8aec92 60%);
 }
 
 .fish {
@@ -104,6 +102,10 @@ body {
   border-radius: 4px;
 }
 
+.img-modal {
+  float: left;
+}
+
 header {
   padding-top: 10px;
   height: 80px;
@@ -118,7 +120,8 @@ header {
 }
 
 .header-section {
-  padding-top: 10px;
+  padding-top: 30px;
+  margin-top: 5px;
   height: 80px;
   color: white;
   text-align: center;
@@ -127,6 +130,11 @@ header {
   background: linear-gradient(90deg, #075504 1%, #16eb0a 46%, #0e9114 99%);
   padding-left: 2%;
   text-transform: uppercase;
+}
+
+#header-angelfish {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .heading-fishes {
@@ -188,13 +196,13 @@ h3 {
 }
 
 footer {
-  height: 150px;
+  height: 200px;
   background: linear-gradient(90deg, #075504 1%, #16eb0a 46%, #0e9114 99%);
   color: #fff;
   text-align: center;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: -3px;
+  margin-bottom: 0px;
   padding-top: 40px;
 }
 
@@ -338,7 +346,7 @@ footer {
 
 .slide {
   width: 1600px;
-  height: 50vh;
+  height: 54vh;
 }
 
 iframe {
