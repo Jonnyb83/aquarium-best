@@ -1,13 +1,15 @@
 html {
+  max-width: 1800px;
+  margin: auto;
   scroll-behavior: smooth;
   scroll-padding: 160px;
   transition-duration: 2.5s;
 }
 
 body {
+  max-width: 1600px;
   margin: auto;
   background: linear-gradient(90deg, rgb(138, 236, 146) 0%, rgb(4, 156, 16) 29%, rgb(138, 236, 146) 60%);
-  max-width: 1600px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -159,6 +161,7 @@ h3 {
 }
 
 .nav-header {
+  max-width: 1600px;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -415,7 +418,12 @@ ul.main-nav li {
 }
 @media only screen and (max-width: 1366px) {
   body {
-    max-width: 100%;
+    max-width: 80%;
+    margin: 81, 30%;
+    width: 81, 30%;
+  }
+  .main-nav {
+    max-width: 80%;
     margin: 81, 30%;
     width: 81, 30%;
   }

@@ -20,6 +20,8 @@ blue;
 // ***********************************************************************************
 // ------GENERAL--------------------------------------------------------------------
 html {
+  max-width: 1800px;
+  margin: auto;
   scroll-behavior: smooth;
   scroll-padding: 160px;
   transition-duration: 2.5s;
@@ -27,9 +29,9 @@ html {
 
 
 body {
+    max-width: 1600px;
     margin: auto;
     background: linear-gradient(90deg, $color-background-green-light 0%, $color-background-green 29%, $color-background-green-light 60%);
-    max-width: 1600px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     
   }
@@ -195,6 +197,7 @@ body {
   }
 
   .nav-header {
+    max-width: 1600px;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -488,7 +491,13 @@ body {
   @media only screen and (max-width: 1366px) {
     body {
       // justify-content: center;
-      max-width: 100%;
+      max-width: 80%;
+      margin: 81,30%;
+      width: 81,30%;
+    }
+
+    .main-nav {
+      max-width: 80%;
       margin: 81,30%;
       width: 81,30%;
     }
