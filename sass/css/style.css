@@ -418,18 +418,31 @@ ul.main-nav li {
 }
 @media only screen and (max-width: 1366px) {
   body {
-    max-width: 80%;
-    margin: 81, 30%;
-    width: 81, 30%;
+    max-width: 1298px;
+    margin: auto;
+    scroll-behavior: smooth;
+    scroll-padding: 160px;
+    transition-duration: 2.5s;
+  }
+  .slide {
+    width: 1298px;
+    height: 485px;
+  }
+  .fish-gallery {
+    max-width: 1300px;
+    margin: auto;
   }
   .main-nav {
-    max-width: 80%;
-    margin: 81, 30%;
-    width: 81, 30%;
+    max-width: 1300PX;
+    margin: 81, 50%;
+  }
+  .slides {
+    max-width: 1298px;
+    width: 100%;
   }
   .aquarium {
     height: auto;
-    width: 81, 30%;
+    width: 1298px;
     padding: 0;
     margin: 0;
     /* margin: 10px 10px 10px 10px; */
@@ -437,17 +450,24 @@ ul.main-nav li {
   .aquarium-card {
     border: 2px solid blue;
     background: linear-gradient(90deg, rgb(50, 20, 233) 1%, rgb(10, 215, 235) 58%, rgb(67, 123, 232) 99%);
-    width: 81, 30%;
+    width: 1231px;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 39px 20px;
     height: 450px;
-    padding: 30px;
-    margin: 81, 30% 81, 30% 81, 30% 81, 30%;
     z-index: 2;
     border-radius: 4px;
   }
+  .aquarium-text {
+    float: right;
+    margin-right: 140px;
+  }
+  .aquarium-1 {
+    width: 700px;
+  }
   .row-card {
-    width: 1300px;
+    width: 1231px;
     margin: 10px 10px 10px 10px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 39px 20px;
   }
   .gallery {
     width: 100vw;
@@ -455,10 +475,7 @@ ul.main-nav li {
   .card {
     width: 240px;
   }
-  .slide {
-    width: auto;
-    height: 350px;
-  }
+
   .video-angelfish {
     width: 1300px;
     height: auto;
