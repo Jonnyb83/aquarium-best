@@ -1,0 +1,643 @@
+//----- VARIABLES --------------------------------------------------------------------------
+// ***************************************************************************************
+$color-background-green-light: rgba(138,236,146,1);
+$color-background-green: rgb(4, 156, 16);
+$color-background-green-dark: rgb(2, 56, 6);
+
+$color-green-light: rgba(22, 235, 10, 1);
+$color-green: rgba(14, 145, 20, 1);
+$color-green-dark: rgba(7, 85, 4, 1);
+
+$color-blue-light: rgba(10, 215, 235, 1);
+$color-blue: rgba(67, 123, 232, 1);
+$color-blue-dark: rgba(50, 20, 233, 1);
+
+$color-blue-extra: dark
+blue;
+
+
+
+// ***********************************************************************************
+// ------GENERAL--------------------------------------------------------------------
+html {
+  max-width: 1800px;
+  margin: auto;
+  scroll-behavior: smooth;
+  scroll-padding: 160px;
+  transition-duration: 2.5s;
+}
+
+
+body {
+    max-width: 1600px;
+    margin: auto;
+    background: linear-gradient(90deg, $color-background-green-light 0%, $color-background-green 29%, $color-background-green-light 60%);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    
+  }
+
+  .border-gradient {
+    border: 20px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to bottom, $color-green-dark, $color-blue-extra);
+  }
+  
+  .fish-gallery {
+    justify-self: center;
+    background: linear-gradient(90deg, $color-background-green-light 0%, $color-background-green 29%, $color-background-green-light 60%);
+  }
+
+  .fish {
+    background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+    margin-top: 319px;
+    display: block;
+    cursor: pointer;
+    /*display:inline-block;*/
+    color: #fff;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+  }
+  
+  .gallery {
+    height: auto;
+    margin-top: 30px;
+    margin: 0 0 20px 20px;
+    padding: 10px 16px;
+    padding-left: 70px;
+    width: 100%;
+    border: 3px solid green;
+  
+    /* justify-content: space-evenly; */
+  }
+  
+  .row-card { 
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  .aquarium {
+    height: auto;
+    width: 1600px;
+    // background: linear-gradient(
+    //   90deg,
+    //   rgba(7, 85, 4, 1) 1%,
+    //   rgba(22, 235, 10, 1) 46%,
+    //   rgba(14, 145, 20, 1) 99%
+    // );
+    margin: 10px 0px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-self: center;
+    font-size: 85%;
+  }
+
+  .aquarium-1 {
+    padding-top: 0;
+    margin-top: 0;
+    width: 800px;
+    height: 400px;
+    z-index: 2;
+  }
+
+  .aquarium-1 img {
+    float: left;
+  }
+
+  .aquarium-card {
+    border: 2px solid $color-blue-dark;
+    background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+    width: 1444px;
+    height: 450px;
+    padding: 55px;
+    margin: 20px 20px 20px 20px;
+    z-index: 2;
+    border-radius: 4px;
+}
+
+.aquarium-text {
+  float: right;
+  margin-right: 200px;
+  color: $color-blue-extra;
+  // border: 1px solid whitesmoke;
+}
+
+.video-angelfish {
+  width: 1349px;
+  height: auto;
+}
+  
+  .row-card {
+    border:2px solid $color-blue-dark;
+    background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+    width: 1366px;
+    height: 350px;
+    /* align-items: center;
+    text-align: center;
+    justify-content: center; */
+    padding: 94px;
+    margin: 20px 20px 20px 20px;
+    z-index: 2;
+    border-radius: 4px;
+  }
+  
+  
+
+  //----- LAYOUT --------------------------------------------------------------------------
+  // ***************************************************************************************
+  header {
+    padding-top: 10px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid rgb(2, 61, 2) ;
+    vertical-align: center;
+    letter-spacing: 6px;
+    background: linear-gradient(90deg, $color-green-dark 1%, $color-green-light 80%, $color-green 99%);
+    padding-left: 2%;
+    text-transform: uppercase;
+  }
+
+  .header-section {
+    
+    padding-top: 10px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 6px;
+    background: linear-gradient(90deg, $color-green-dark 1%, $color-green-light 46%, $color-green 99%);
+    padding-left: 2%;
+    text-transform: uppercase;
+  }
+
+  .heading-fishes {
+    margin-left: 50px;
+    padding-left: 50px;
+  }
+
+  h3 {
+    visibility: none;
+  }
+  .main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, $color-green-dark 1%, $color-green-light 46%, $color-green 99%);
+    text-transform: uppercase;
+    transition: 2s;
+    letter-spacing: 1px;
+    border-top: 2px solid rgb(11, 78, 5);
+    // border-right: 2px solid rgb(40, 26, 240);
+    border-bottom: 2px solid rgb(2, 61, 10);
+    height: 37px;
+  }
+
+  .nav-header {
+    max-width: 1600px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 96.25%;
+    z-index: 3;
+  }
+  
+  .main-nav li {
+    float: left;
+  }
+  
+  .main-nav li a {
+    display: block;
+    color: rgba(15, 36, 104, 0.932);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.5s;
+    border-left: 1px solid rgb(8, 68, 11);
+    width: auto;
+    padding-left: 20px;
+  }
+  
+  .main-nav li a:hover:not(.active) {
+    text-decoration: space-between;
+    transform: scale(1.1);
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    border-bottom: 2px solid rgb(1, 70, 13) 0.5s;
+  }
+  
+  .main-nav li a.active {
+    background-color: transparent;
+    color: white;
+    margin-right: 4px;
+  }
+  
+  .main-nav li.right {
+    float: right;
+  }
+
+  footer {
+    height: 150px;
+    background: linear-gradient(
+      90deg,
+      rgba(7, 85, 4, 1) 1%,
+      rgba(22, 235, 10, 1) 46%,
+      rgba(14, 145, 20, 1) 99%
+    );
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  
+//----- COMPONETS --------------------------------------------------------------------------
+// *****************************************************************************************
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* modals incons*/
+.icons-content {
+  padding:4px 30px;
+  display: inline-block;
+  width: 300px;
+  
+}
+
+.modal-paragraph {
+  margin-left: 40px;
+  align-self: center;
+  padding: 5px;
+}
+
+.icons {
+  height: 25px;
+  width: 25px;
+  font-weight: 900;
+  float :left;
+  display: block;
+}
+
+/* The Close Button */
+.modal-close {
+  color: rgb(158, 158, 160);
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  font-weight: 400;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.img-modal {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+  
+  .li-left {
+    margin-left: 20px;
+  }
+  
+  .slideshow {
+    height: auto;
+    background: linear-gradient(
+      90deg,
+      rgba(7, 85, 4, 1) 1%,
+      rgba(22, 235, 10, 1) 46%,
+      rgba(14, 145, 20, 1) 99%
+    );
+    margin-bottom: 50px;
+  }
+
+  .card {
+    background-color: transparent;
+    width: 270px;
+    height: 350px;
+    perspective: 1000px;
+    padding: 10px;
+  }
+  
+  .flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.25s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .card:hover .flip-card {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+    // background: linear-gradient(
+    //   90deg,
+    //   rgba(50, 20, 233, 1) 1%,
+    //   rgba(10, 215, 235, 1) 58%,
+    //   rgba(67, 123, 232, 1) 99%
+    // );
+    color: rgba(4, 3, 27, 0.65);
+    font-weight: 600;
+  }
+  
+  .card-back {
+    background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+  
+    color: rgba(4, 3, 27, 0.65);
+    transform: rotateY(180deg);
+  }
+  
+  .button {
+    background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+    border-radius: 3px;
+    border: rgb(5, 1, 41);
+    margin-top: 50px;
+    color: darkblue;
+    font-weight: 700;
+    text-decoration: solid;
+    padding: 15px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.75s;
+    /* z-index: -10; */
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  .button:hover {
+    border-bottom: 1px solid darkgreen;
+    border-right: 1px solid darkgreen;
+    transform: scale(1.05);
+    box-shadow: darkgreen;
+  }
+
+  .video-angelfish {
+    background: linear-gradient(
+      90deg,
+      rgba(7, 85, 4, 1) 1%,
+      rgba(22, 235, 10, 1) 46%,
+      rgba(14, 145, 20, 1) 99%
+    );
+    height: 700px;
+    width: 100vw;
+  }
+  
+  .slide {
+    width: 1600px;
+    height: 50vh;
+  }
+
+  iframe {
+    width: 1600px;
+    height: 53vw;
+  }
+  
+  
+  .card-slides {
+    height: 483px;
+    width: 1600px;
+  }
+  
+
+  //----- MIXINS --------------------------------------------------------------------------
+  // ***************************************************************************************
+
+  @media only screen and (max-width: 500px) {
+    .gallery {
+      width: 24.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .gallery {
+      width: 49.99999%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    ul.main-nav li.right,
+    ul.main-nav li {
+      float: none;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .gallery {
+      width: 100%;
+    }
+    .video-angelfish {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .gallery {
+      width: 100%;
+    }
+    .video-angelfish {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 1366px) {
+    body {
+      // justify-content: center;
+        max-width: 1298px;
+        margin: auto;
+        scroll-behavior: smooth;
+        scroll-padding: 160px;
+        transition-duration: 2.5s;
+      
+    }
+    .slide {
+      width: 1298px;
+      height: 485px;
+    }
+    
+    .fish-gallery {
+      max-width: 1300px;
+      margin:auto;
+    }
+
+    .main-nav {
+      max-width: 1300PX;
+      margin: 81,50%;
+    }
+    .slides {
+      max-width: 1300px;
+      width: 100%;
+    }
+  
+    .aquarium {
+      height: auto;
+      width: 1298px;
+      padding: 0;
+      margin: 0;
+      /* margin: 10px 10px 10px 10px; */
+    }
+  
+    .aquarium-card {
+      border: 2px solid blue;
+      background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+      width: 1231px;
+      margin: 10px 10px 10px 10px;
+      padding: 20px 20px 39px 20px;
+      height: 450px;
+      z-index: 2;
+      border-radius: 4px;
+    }
+
+    .aquarium-text {
+      float: right;
+      margin-right:140px
+    }
+
+    .aquarium-1 {
+      width: 700px;
+    }
+  
+    .row-card {
+      width: 1231px;
+      margin: 10px 10px 10px 10px;
+      padding: 20px 20px 39px 20px;
+    }
+  
+    .gallery {
+      width: 100vw;
+    }
+    .card {
+      width: 240px;
+    }
+  
+    .slide {
+      width: auto;
+      height: 350px;
+    }
+    .video-angelfish {
+      width: 1300px;
+      height: auto;
+    }
+  
+    #myVideo {
+      width: 100%;
+      height: 758px;
+    }
+  }
+  /* Responsive design for images */
+  
+  div.card {
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  div.card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.description {
+    padding: 15px;
+    text-align: center;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+//--------------------------------------------------------------------------------------------------------------------------*
+  /* ********** NOT USE CODE ---------------------------------------------***********************************************
+// -------------------------------------------------------------------------------------------------------------------------*
+
+  box-sizing: border-box;
+} 
+
+  // header:hover {
+  //   transform: scale(1.015);
+  // }
+
+  */
+
+    // .slide {
+  //   
+  //   width: 100%;
+  // }
+  
+
+  
+ 
+  /* .aquariums {
+    height: auto;
+    margin-top: 30px;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 16px;
+    padding-left: 70px;
+    width: auto;
+  } */
+  
+
+  
+
