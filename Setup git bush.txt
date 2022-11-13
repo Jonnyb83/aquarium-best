@@ -1,0 +1,24 @@
+
+jbodi@DESKTOP-5EE2DIF MINGW64 ~
+$ cd Desktop/my_projects/aquarium/sass
+
+jbodi@DESKTOP-5EE2DIF MINGW64 ~/Desktop/my_projects/aquarium/sass
+$ sass --watch main.scss:css/style.css
+Sass is watching for changes. Press Ctrl-C to stop.
+
+Compiled main.scss to css\style.css.
+Compiled main.scss to css\style.css.
+
+Or
+
+jbodi@Desktop-Jan MINGW64 ~
+$ cd desktop
+
+jbodi@Desktop-Jan MINGW64 ~/desktop
+$ cd test_new_aqua/
+
+jbodi@Desktop-Jan MINGW64 ~/desktop/test_new_aqua
+$ sass --watch sass/main.scss:sass/css/style.css
+>>> Sass is watching for changes. Press Ctrl-C to stop.
+      write sass/css/style.css
+      write sass/css/style.css.map
