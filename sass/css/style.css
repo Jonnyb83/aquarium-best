@@ -120,7 +120,7 @@ header {
   border-bottom: 2px solid rgb(2, 61, 2);
   vertical-align: center;
   letter-spacing: 6px;
-  background: linear-gradient(90deg, rgb(7, 85, 4) 1%, rgb(22, 235, 10) 80%, rgb(14, 145, 20) 99%);
+  background: linear-gradient(90deg, rgb(50, 20, 233) 1%, rgb(10, 215, 235) 80%, rgb(67, 123, 232) 99%);
   padding-left: 2%;
   text-transform: uppercase;
 }
@@ -151,7 +151,7 @@ h3 {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: linear-gradient(90deg, rgb(7, 85, 4) 1%, rgb(22, 235, 10) 46%, rgb(14, 145, 20) 99%);
+  background: linear-gradient(90deg, rgb(50, 20, 233) 1%, rgb(10, 215, 235) 80%, rgb(67, 123, 232) 99%);
   text-transform: uppercase;
   transition: 2s;
   letter-spacing: 1px;
@@ -206,12 +206,11 @@ h3 {
 
 footer {
   height: 150px;
-  background: linear-gradient(90deg, rgb(7, 85, 4) 1%, rgb(22, 235, 10) 46%, rgb(14, 145, 20) 99%);
+  background: linear-gradient(90deg, rgb(50, 20, 233) 1%, rgb(10, 215, 235) 80%, rgb(67, 123, 232) 99%);
   color: #fff;
   text-align: center;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 20px;
   padding-top: 40px;
 }
 
@@ -408,16 +407,104 @@ ul.main-nav li {
   }
 }
 @media only screen and (max-width: 1024px) {
+  body {
+    max-width: 900px;
+    margin: auto;
+    scroll-behavior: smooth;
+    scroll-padding: 160px;
+    transition-duration: 2.5s;
+    width: 960px;
+  }
+  .slide {
+    width: 960px;
+    height: 485px;
+  }
+  .fish-gallery {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .main-nav {
+    max-width: 1000PX;
+    margin: 0px;
+    width: 960px;
+  }
+  .slides {
+    max-width: 1000px;
+    width: 960px;
+  }
+  .aquarium {
+    height: auto;
+    width: 960px;
+    padding: 0;
+    margin: 0;
+    /* margin: 10px 10px 10px 10px; */
+  }
+  .aquarium-card {
+    border: 2px solid blue;
+    background: linear-gradient(90deg, rgb(50, 20, 233) 1%, rgb(10, 215, 235) 58%, rgb(67, 123, 232) 99%);
+    width: 960px;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 39px 20px;
+    height: 450px;
+    z-index: 2;
+    border-radius: 4px;
+  }
+  .aquarium-text {
+    float: right;
+    margin-right: 140px;
+  }
+  .aquarium-1 {
+    width: 700px;
+  }
+  .row-card {
+    width: 960px;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 39px 20px;
+  }
   .gallery {
-    width: 100%;
+    width: 960px;
+  }
+  .card {
+    width: 180px;
+  }
+  .slide {
+    width: 960px;
+    height: 350px;
   }
   .video-angelfish {
-    width: 100%;
+    width: 960px;
     height: auto;
   }
+  #myVideo {
+    width: 100%;
+    height: 758px;
+  }
 }
+/* Responsive design for images */
+div.card {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+div.card img {
+  width: 100%;
+  height: auto;
+}
+
+div.description {
+  padding: 15px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1366px) {
   body {
+    max-width: 1298px;
+    margin: auto;
+    scroll-behavior: smooth;
+    scroll-padding: 160px;
+    transition-duration: 2.5s;
+  }
+  #body {
     max-width: 1298px;
     margin: auto;
     scroll-behavior: smooth;
@@ -437,7 +524,7 @@ ul.main-nav li {
     margin: 81, 50%;
   }
   .slides {
-    max-width: 1298px;
+    max-width: 1300px;
     width: 100%;
   }
   .aquarium {
@@ -475,7 +562,10 @@ ul.main-nav li {
   .card {
     width: 240px;
   }
-
+  .slide {
+    width: auto;
+    height: 350px;
+  }
   .video-angelfish {
     width: 1300px;
     height: auto;
