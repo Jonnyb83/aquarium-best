@@ -204,14 +204,39 @@ h3 {
   float: right;
 }
 
-footer {
-  height: 150px;
-  background: linear-gradient(90deg, rgb(50, 20, 233) 1%, rgb(10, 215, 235) 80%, rgb(67, 123, 232) 99%);
-  color: #fff;
+.footer {
+  height: 16vh;
+  background-image: linear-gradient(to right bottom, rgba(6, 208, 235, 0.6), rgba(6, 24, 126, 0.95));
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-top: 1rem;
+  padding: 3rem;
+}
+
+.footer-social-links {
   text-align: center;
-  align-items: center;
-  margin-top: 20px;
-  padding-top: 40px;
+  color: white;
+}
+
+.footer_icons {
+  margin: 1rem 1rem 1rem 1rem;
+  page-break-after: 2rem 2rem;
+}
+
+.footer_icons-img {
+  height: 2rem;
+  width: auto;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-color: white;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+
+.footer_icons-img:hover {
+  transform: scale(1.3);
+  box-shadow: #06187e;
 }
 
 /* The Modal (background) */

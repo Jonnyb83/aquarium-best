@@ -62,6 +62,9 @@ function topFunction() {
 	document.documentElement.scrollTop = 0;
   };
 
+  
+
+
 // Add active class
 
 // Add active class to the current button (highlight it)
