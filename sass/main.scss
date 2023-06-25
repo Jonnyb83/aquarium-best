@@ -152,7 +152,7 @@ body {
     height: 80px;
     color: white;
     text-align: center;
-    border-bottom: 2px solid rgb(2, 61, 2) ;
+    border-bottom: 2px solid rgb(255, 255, 255) ;
     vertical-align: center;
     letter-spacing: 6px;
     background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 80%, $color-blue 99%);
@@ -457,17 +457,17 @@ body {
   
   .slide {
     width: 1600px;
-    height: 50vh;
+    height: 58vh;
   }
 
   iframe {
     width: 1600px;
-    height: 53vw;
+    height: 45vw;
   }
   
   
   .card-slides {
-    height: 483px;
+    height: 540px;
     width: 1600px;
   }
   

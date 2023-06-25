@@ -117,7 +117,7 @@ header {
   height: 80px;
   color: white;
   text-align: center;
-  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(2, 61, 2);
   vertical-align: center;
   letter-spacing: 6px;
   background: linear-gradient(90deg, rgb(50, 20, 233) 1%, rgb(10, 215, 235) 80%, rgb(67, 123, 232) 99%);
@@ -392,7 +392,7 @@ h3 {
 
 .slide {
   width: 1600px;
-  height: 58vh;
+  height: 45vh;
 }
 
 iframe {
@@ -401,7 +401,7 @@ iframe {
 }
 
 .card-slides {
-  height: 540px;
+  height: 530px;
   width: 1600px;
 }
 
@@ -636,4 +636,4 @@ div.description {
   width: auto;
 } */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=cssstyle.css.map */
