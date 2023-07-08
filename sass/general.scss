@@ -1,0 +1,126 @@
+// ***********************************************************************************
+// ------GENERAL-------------------------------------------------------------------- //
+
+html {
+    max-width: 1800px;
+    margin: auto;
+    scroll-behavior: smooth;
+    scroll-padding: 160px;
+    transition-duration: 2.5s;
+  }
+  
+  
+  body {
+      max-width: 1600px;
+      margin: auto;
+      background: linear-gradient(90deg, $color-background-green-light 0%, $color-background-green 29%, $color-background-green-light 60%);
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      
+    }
+  
+    .border-gradient {
+      border: 20px solid;
+      border-image-slice: 1;
+      border-width: 2px;
+      border-image-source: linear-gradient(to bottom, $color-green-dark, $color-blue-extra);
+    }
+    
+    .fish-gallery {
+      justify-self: center;
+      background: linear-gradient(90deg, $color-background-green-light 0%, $color-background-green 29%, $color-background-green-light 60%);
+    }
+  
+    .fish {
+      background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+      margin-top: 319px;
+      display: block;
+      cursor: pointer;
+      /*display:inline-block;*/
+      color: #fff;
+      font-size: 1rem;
+      border: 1px solid #bbb;
+    }
+    
+    .gallery {
+      height: auto;
+      margin-top: 30px;
+      margin: 0 0 20px 20px;
+      padding: 10px 16px;
+      padding-left: 70px;
+      width: 100%;
+      border: 3px solid green;
+    
+      /* justify-content: space-evenly; */
+    }
+    
+    .row-card { 
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+  
+    .aquarium {
+      height: auto;
+      width: 1600px;
+      // background: linear-gradient(
+      //   90deg,
+      //   rgba(7, 85, 4, 1) 1%,
+      //   rgba(22, 235, 10, 1) 46%,
+      //   rgba(14, 145, 20, 1) 99%
+      // );
+      margin: 10px 0px;
+      padding: 10px 0px;
+      justify-content: center;
+      align-self: center;
+      font-size: 85%;
+    }
+  
+    .aquarium-1 {
+      padding-top: 0;
+      margin-top: 0;
+      width: 800px;
+      height: 400px;
+      z-index: 2;
+    }
+  
+    .aquarium-1 img {
+      float: left;
+    }
+  
+    .aquarium-card {
+      border: 2px solid $color-blue-dark;
+      background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+      width: 1444px;
+      height: 450px;
+      padding: 55px;
+      margin: 20px 20px 20px 20px;
+      z-index: 2;
+      border-radius: 4px;
+  }
+  
+  .aquarium-text {
+    float: right;
+    margin-right: 200px;
+    color: $color-blue-extra;
+    // border: 1px solid whitesmoke;
+  }
+  
+  .video-angelfish {
+    width: 1349px;
+    height: auto;
+  }
+    
+    .row-card {
+      border:2px solid $color-blue-dark;
+      background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+      width: 1366px;
+      height: 350px;
+      /* align-items: center;
+      text-align: center;
+      justify-content: center; */
+      padding: 94px;
+      margin: 20px 20px 20px 20px;
+      z-index: 2;
+      border-radius: 4px;
+    }

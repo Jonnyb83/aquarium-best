@@ -1,0 +1,125 @@
+//----- LAYOUT --------------------------------------------------------------------------
+  // ***************************************************************************************
+  header {
+    padding-top: 10px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255) ;
+    vertical-align: center;
+    letter-spacing: 6px;
+    background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 80%, $color-blue 99%);
+    padding-left: 2%;
+    text-transform: uppercase;
+  }
+
+  .header-section {
+    
+    padding-top: 10px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 6px;
+    background: linear-gradient(90deg, $color-green-dark 1%, $color-green-light 46%, $color-green 99%);
+    padding-left: 2%;
+    text-transform: uppercase;
+  }
+
+  .heading-fishes {
+    margin-left: 50px;
+    padding-left: 50px;
+  }
+
+  h3 {
+    visibility: none;
+  }
+  .main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 80%, $color-blue 99%);
+    text-transform: uppercase;
+    transition: 2s;
+    letter-spacing: 1px;
+    border-top: 2px solid rgb(11, 78, 5);
+    // border-right: 2px solid rgb(40, 26, 240);
+    border-bottom: 2px solid rgb(2, 61, 10);
+    height: 37px;
+  }
+
+  .nav-header {
+    max-width: 1600px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 96.25%;
+    z-index: 3;
+  }
+  
+  .main-nav li {
+    float: left;
+  }
+  
+  .main-nav li a {
+    display: block;
+    color: rgba(15, 36, 104, 0.932);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: .50s;
+    border-left: 1px solid rgb(8, 68, 11);
+    width: auto;
+    padding-left: 20px;
+  }
+  
+  .main-nav li a:hover:not(.active) {
+    text-decoration: space-between;
+    transform: scale(1.1);
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    border-bottom: 2px solid rgb(1, 70, 13) 0.5s;
+  }
+  
+  .main-nav li a.active {
+    background-color: transparent;
+    color: white;
+    margin-right: 4px;
+  }
+  
+  .main-nav li.right {
+    float: right;
+  }
+
+
+  .footer {
+    height: 16vh;
+    background-image: linear-gradient(to right bottom, rgba(6, 208, 235, 0.6), rgba(6, 24, 126, 0.95));
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    // -webkit-clip-path: polygon(0 0, 100% -25%, 100% 75vh, 0 100%);
+    // clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    margin-top: 1rem;
+    padding: 3rem; }
+    .footer-social-links {
+      text-align: center;
+      color: white; }
+
+      .footer_icons {
+        margin: 1rem 1rem 1rem 1rem;
+        page-break-after: 2rem 2rem; }
+        .footer_icons-img {
+          height: 2rem;
+          width: auto;
+          margin-left: 3rem;
+          margin-right: 3rem;
+          background-color: white;
+          border-radius: 6px;
+          transition: all .5s; }
+          .footer_icons-img:hover {
+            transform: scale(1.3);
+            box-shadow: #06187e; }
+      
