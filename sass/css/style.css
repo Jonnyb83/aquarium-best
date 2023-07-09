@@ -358,6 +358,27 @@ body {
   transform: rotateY(180deg);
 }
 
+.video-angelfish {
+  background: linear-gradient(90deg, rgb(7, 85, 4) 1%, rgb(22, 235, 10) 46%, rgb(14, 145, 20) 99%);
+  height: 700px;
+  width: 100vw;
+}
+
+.slide {
+  width: 1600px;
+  height: 58vh;
+}
+
+iframe {
+  width: 1600px;
+  height: 45vw;
+}
+
+.card-slides {
+  height: 540px;
+  width: 1600px;
+}
+
 .button {
   background: linear-gradient(90deg, rgb(50, 20, 233) 1%, rgb(10, 215, 235) 58%, rgb(67, 123, 232) 99%);
   border-radius: 3px;
@@ -382,27 +403,6 @@ body {
   border-right: 1px solid darkgreen;
   transform: scale(1.05);
   box-shadow: darkgreen;
-}
-
-.video-angelfish {
-  background: linear-gradient(90deg, rgb(7, 85, 4) 1%, rgb(22, 235, 10) 46%, rgb(14, 145, 20) 99%);
-  height: 700px;
-  width: 100vw;
-}
-
-.slide {
-  width: 1600px;
-  height: 58vh;
-}
-
-iframe {
-  width: 1600px;
-  height: 45vw;
-}
-
-.card-slides {
-  height: 540px;
-  width: 1600px;
 }
 
 @media only screen and (max-width: 500px) {

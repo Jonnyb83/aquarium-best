@@ -1,0 +1,27 @@
+//-----------------------------  Buttons ---------------------------------------------------
+// *****************************************************************************************
+
+.button {
+    background: linear-gradient(90deg, $color-blue-dark 1%, $color-blue-light 58%, $color-blue 99%);
+    border-radius: 3px;
+    border: rgb(5, 1, 41);
+    margin-top: 50px;
+    color: darkblue;
+    font-weight: 700;
+    text-decoration: solid;
+    padding: 15px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.75s;
+    /* z-index: -10; */
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  .button:hover {
+    border-bottom: 1px solid darkgreen;
+    border-right: 1px solid darkgreen;
+    transform: scale(1.05);
+    box-shadow: darkgreen;
+  }
