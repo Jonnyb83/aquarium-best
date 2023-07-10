@@ -312,239 +312,8 @@ iframe {
     width: 24.99999%;
     margin: 6px 0; } }
 @media only screen and (max-width: 600px) {
-  body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(90deg, #8aec92 0%, #049c10 29%, #8aec92 60%);
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
   .gallery {
-    width: 100%;
-    margin: 6px 0;
-  }
-
-  .aquarium-card {
-    width: 100%;
-    height: auto;
-    padding: 5%;
-    margin: 2% 2% 2% 2%;
-  }
-
-  .aquarium-1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .aquarium-text {
-    margin-right: 2%;
-  }
-
-  .row-card {
-    width: 100%;
-    margin: 10px 0;
-    padding: 20px;
-  }
-
-  .video-angelfish {
-    width: 100%;
-    height: auto;
-  }
-
-  header,
-  .header-section {
-    height: 80px;
-    color: white;
-    text-align: center;
-    border-bottom: 2px solid #023d02;
-    vertical-align: center;
-    letter-spacing: 6px;
-    padding-left: 2%;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    display: none;
-  }
-
-  .main-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: linear-gradient(90deg, #075504 1%, #16eb0a 46%, #0e9114 99%);
-    text-transform: uppercase;
-    transition: 2s;
-    letter-spacing: 1px;
-    border-top: 2px solid #0b4e05;
-    border-bottom: 2px solid #023d0a;
-    height: 37px;
-  }
-
-  .main-nav li {
-    float: left;
-  }
-
-  .main-nav li a {
-    display: block;
-    color: rgba(15, 36, 104, 0.932);
-    text-align: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: 0.5s;
-    border-left: 1px solid #08440b;
-    width: auto;
-    padding-left: 20px;
-  }
-
-  .main-nav li a:hover:not(.active) {
-    text-decoration: space-between;
-    transform: scale(1.1);
-    letter-spacing: 1px;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    border-bottom: 2px solid #01460d 0.5s;
-  }
-
-  .main-nav li a.active {
-    background-color: transparent;
-    color: white;
-    margin-right: 4px;
-  }
-
-  .main-nav li.right {
-    float: right;
-  }
-
-  footer {
-    height: 150px;
-    background: linear-gradient(90deg, #075504 1%, #16eb0a 46%, #0e9114 99%);
-    color: #fff;
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 40px;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .img-modal {
-    width: 200px;
-    height: 200px;
-  }
-
-  .li-left {
-    margin-left: 20px;
-  }
-
-  .slideshow {
-    height: auto;
-    background: linear-gradient(90deg, #075504 1%, #16eb0a 46%, #0e9114 99%);
-    margin-bottom: 50px;
-  }
-
-  .card {
-    background-color: transparent;
-    width: 100%;
-    height: auto;
-    perspective: 1000px;
-    padding: 10px;
-  }
-
-  .flip-card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 1.25s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .card:hover .flip-card {
-    transform: rotateY(180deg);
-  }
-
-  .card-front,
-  .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-
-  .card-front {
-    background: linear-gradient(90deg, #3214e9 1%, #0ad7eb 58%, #437be8 99%);
-    color: rgba(4, 3, 27, 0.65);
-    font-weight: 600;
-  }
-
-  .card-back {
-    background: linear-gradient(90deg, #3214e9 1%, #0ad7eb 58%, #437be8 99%);
-    color: rgba(4, 3, 27, 0.65);
-    transform: rotateY(180deg);
-  }
-
-  .button {
-    background: linear-gradient(90deg, #3214e9 1%, #0ad7eb 58%, #437be8 99%);
-    border-radius: 3px;
-    border: #050129;
-    margin-top: 50px;
-    color: darkblue;
-    font-weight: 700;
-    text-decoration: solid;
-    padding: 15px 32px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.75s;
-  }
-
-  .pointer {
-    cursor: pointer;
-  }
-
-  .button:hover {
-    border-bottom: 1px solid darkgreen;
-    border-right: 1px solid darkgreen;
-    transform: scale(1.05);
-    box-shadow: darkgreen;
-  }
-}
+    width: 49.99999%; } }
 @media screen and (max-width: 700px) {
   ul.main-nav li.right,
   ul.main-nav li {
@@ -620,3 +389,25 @@ div.card img {
 div.description {
   padding: 15px;
   text-align: center; }
+
+  /* ********** NOT USE CODE ---------------------------------------------***********************************************
+// -------------------------------------------------------------------------------------------------------------------------*
+
+  box-sizing: border-box;
+} 
+
+  // header:hover {
+  //   transform: scale(1.015);
+  // }
+
+  */
+/* .aquariums {
+  height: auto;
+  margin-top: 30px;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 16px;
+  padding-left: 70px;
+  width: auto;
+} */
+
+/*# sourceMappingURL=style.css.map */
